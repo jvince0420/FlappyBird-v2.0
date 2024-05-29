@@ -558,7 +558,7 @@ $(document).ready(function() {
 
     setInterval(placePipes, 2000); //every 2 seconds for the pipe to appear
     document.addEventListener("keydown", moveBird); //for the bird to fly
-    document.addEventListener("x", moveBird); //use the mouse to fly the bird
+    document.addEventListener("click", moveBird); //use the mouse to fly the bird
     document.addEventListener("keydown", skills); // so the skills shortcut key
 
     // key for revive skill
