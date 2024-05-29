@@ -35,10 +35,10 @@ let bottomPipeImg;
 // list of top and bottom pipes images
 let pipeImages = [
     { top: "./img/Tpipe.png", bottom: "./img/Bpipe.png" },
-    { top: "img/NBTpipeBlue.png", bottom: "img/NBBpipeblue.png" },
-    { top: "img/NBTpipeOrange.png", bottom: "img/NBBpipeOrange.png" },
-    { top: "img/NBTpipeRed.png", bottom: "img/NBBpipeRed.png" },
-    { top: "img/NBTpipeViolet.png", bottom: "img/NBBpipeViolet.png" },
+    { top: "./img/NBTpipeBlue.png", bottom: "./img/NBBpipeblue.png" },
+    { top: "./img/NBTpipeOrange.png", bottom: "./img/NBBpipeOrange.png" },
+    { top: "./img/NBTpipeRed.png", bottom: "./img/NBBpipeRed.png" },
+    { top: "./img/NBTpipeViolet.png", bottom: "./img/NBBpipeViolet.png" },
 ]
 let indexImage = 0; // current index pipe displayed
 
@@ -543,10 +543,10 @@ $(document).ready(function() {
     // S K I L L S
     //Shield
     shieldImg = new Image();
-    shieldImg.src = "img/BirdShieldNoBg.png";
+    shieldImg.src = "./img/BirdShieldNoBg.png";
 
     invulImg = new Image();
-    invulImg.src = "img/stoned.png";
+    invulImg.src = "./img/stoned.png";
 
     //PIPE TOP
     topPipeImg = new Image();
