@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird v2.0</title>
+    <link rel="stylesheet" href="/flappy.css">
+    <script src="/jQuery.js"></script>
+    <script src="/flappyJs.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Starting Front page-->
+    <div id="home-menu" class="menu">
+        <h1>Flappy Bird 2.0</h1>
+        <button id="startGame">Start Game</button>
+        <button id="showMechanics">Game Mechanics</button>
+        <button id="customizeGame">Customize</button>
+    </div>
+
+    <!-- inside of button GAME MECHANICS-->
+    <div id="game-mechanics" class="menu" style="display: none;">
+        <h1>Game Mechanics</h1>
+        <div class="mechanics">
+            <h3>1. Objectives:</h3>
+            <p>The objective of the game is to navigate a bird through a series of pipes without colliding with them. The longer the bird survives without colliding, the higher the score.</p>
+            <h3>2. Controls:</h3>
+            <p>• Jump: Spacebar to make the bird jump.</p>
+            <p>• Shield: Press "Q" to activate.</p>
+            <p>• Extra Life: Press "W" to activate.</p>
+            <p>• Invulnerability: Press "E" to activate.</p>
+            <h3>3. Skills:</h3>
+            <table class="skills-table">
+                <tr>
+                    <td class="skillImg"><img src="/img/BirdShieldNoBg.png" alt="Shield"></td>
+                    <td>Shield - Cost 10 Skill point <br>
+                        Protects the bird three times from collisions for a limited time
+                    </td>
+                </tr>
+                <tr>
+                    <td class="skillImg"><img src="/img/HeartWing-NOBG.png" alt="Revive"></td>
+                    <td>Revive - Cost 20 Skill point <br>
+                        Allows players to continue the game after a collision, providing a second chance.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="skillImg"><img src="/img/stoned.png" alt="Invulnerability"></td>
+                    <td>Invulnerability - Cost 30 Skill point <br>
+                        Makes the bird invulnerable to collisions for a limited time
+                    </td>
+                </tr>
+            </table>
+            <h3>4. Skill points</h3>
+            <p>• Skill points are randomly awarded after passing pipes.</p>
+            <p>• You can't earn any skill points when skills are activated.</p>
+        </div> 
+        <button id="goBackFromMechanics">Back</button>
+    </div>
+    
+    <!-- This where to costumize the color of the pipes and the day and night mode-->
+    <div id="customize-menu" class="customize" style="display: none;">
+        <h1>Customize Game</h1>
+        <div id="modePreview" class="preview">
+            <img id="backgroundPreview" src="./img/flappybirdbg.png" alt="Background Preview">
+            <p id="modeText">Day Mode</p>
+        </div>
+        <button id="dayNightToggle">Mode</button>
+        <div id="pipePreview" class="preview">
+            <img id="topPipePreview" src="img/Tpipe.png" alt="Top Pipe Preview">
+            <img id="bottomPipePreview" src="img/Bpipe.png" alt="Bottom Pipe Preview">
+        </div>
+        <div class="button-group">
+            <button id="pipePrev" class="prevButton pipesColorButton"><<-Prev</button>
+            <button id="pipeNext" class="nextButton pipesColorButton">Next->></button>
+        </div>
+        <button id="goBackFromCustomize">Back</button>
+    </div>
+
+    <!-- This is where the game begins-->
+    <div id="game-container" style="display: none;">
+        <h1>Flappy Bird 2.0</h1>
+        <div id="backGround">
+            <canvas id="board"></canvas>
+            <button id="exit">Back to menu</button>
+        </div>
+    </div>
+</body>
+</html>
