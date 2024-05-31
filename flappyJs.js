@@ -85,9 +85,9 @@ let insufficientPoints = '';
 let hitsTextShield = '';
 
 // Points required to use power-ups
-let pointsForShield = 1;
-let pointsForRevive = 2;
-let pointsForinvulnerable = 1;
+let pointsForShield = 10;
+let pointsForRevive = 20;
+let pointsForinvulnerable = 30;
 
 let gameLoopRunning = false; //so it wont multiple the loop in update frame
 
